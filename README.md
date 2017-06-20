@@ -105,7 +105,7 @@ You can skip below steps if you already have existing **EC2 Key Pair** in curren
 	- Network: **DefaultVPC**
 	- Subnet: **No preference**
 	- Auto-assign Public IP: **Enable**
-	- IAM role: **WebServerRole** (which you created in previous task)
+	- IAM role: **MyApplicationRole** (which you created in previous task)
 - Click **Next: Add Storage**
 	- Leave the storage settings as default
 - Click **Next: Tag Instance**
@@ -167,7 +167,7 @@ You have launched EC2 instance assuming IAM role which have permission to S3. No
 ![iam-role](./images/roles-usingrole-ec2roleinstance.png)
 
 - Connect to your EC2 instance using SSH
-- run command: **aws-version**
+- run command: **aws --version**
 	- Showing current AWS CLI version
 	- By default, AWS CLI tool is included in Amazon Linux AMI
 - run command: **aws s3 ls**
